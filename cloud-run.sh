@@ -306,7 +306,7 @@ get_channel_url() {
     
     while true; do
         read -p "Enter Channel URL [default: https://t.me/trenzych]: " CHANNEL_URL
-        CHANNEL_URL=${CHANNEL_URL:-"https://t.me/premium_channel_404"}
+        CHANNEL_URL=${CHANNEL_URL:-"https://t.me/trenzych"}
         
         # Remove any trailing slashes
         CHANNEL_URL=$(echo "$CHANNEL_URL" | sed 's|/*$||')
@@ -358,7 +358,7 @@ get_user_input() {
     # UUID
     while true; do
         read -p "Enter UUID: " UUID
-        UUID=${UUID:-"9c910024-714e-4221-81c6-41ca9856e7ab"}
+        UUID=${UUID:-"f6fff828-bb34-437b-ab83-9180013cbce8"}
         if validate_uuid "$UUID"; then
             break
         fi
@@ -590,7 +590,7 @@ main() {
     cleanup
     
     log "Cloning repository..."
-    if ! git clone https://github.com/Andrew9kk/gcp-v2ray.git; then
+    if ! git clone https://github.com/FaclonTeam/gcp-v2ray.git; then
         error "Failed to clone repository"
         exit 1
     fi
