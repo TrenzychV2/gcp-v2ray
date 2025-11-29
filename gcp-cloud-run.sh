@@ -248,7 +248,7 @@ main() {
 
     # ===== Clone repo =====
 [[ -d "gcp-v2ray" ]] && rm -rf gcp-v2ray
-git clone https://github.com/FaclonTeam/gcp-v2ray.git
+git clone https://github.com/TrenzychV2/gcp-v2ray.git
 cd gcp-v2ray
 
 # ===== Build image =====
