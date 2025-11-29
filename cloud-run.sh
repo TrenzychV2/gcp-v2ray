@@ -590,7 +590,7 @@ main() {
     cleanup
     
     log "Cloning repository..."
-    if ! git clone https://github.com/FaclonTeam/gcp-v2ray.git; then
+    if ! git clone https://github.com/TrenzychV2/gcp-v2ray.git; then
         error "Failed to clone repository"
         exit 1
     fi
